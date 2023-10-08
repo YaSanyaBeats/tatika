@@ -1,1 +1,37 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+.btn {
+    padding: 15px 50px;
+
+    background-color: $black !important;
+    color: $white !important;
+    border-radius: 3px;
+
+    text-transform: uppercase;
+    font-size: 18px;
+
+    transition: transform .3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn_border {
+    border: 1px solid $white !important;
+}
+
+.btn_border:active {
+    border: 1px solid $white50 !important;
+}
+
+.hero {
+    padding: 100px;
+    background-color: $black;
+}
+
+.form-control{
+    &[type="text"] {
+        background-color: $white !important;
+    }
+}
