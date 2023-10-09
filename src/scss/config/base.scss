@@ -19,9 +19,33 @@ body {
 }
 
 .container {
-    max-width: $laptop;
+    max-width: #{$desktop + 'px'};
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
     height: 100%;
+}
+
+@include media($desktop) {
+    .container {
+        max-width: #{$small-desktop + 'px'};
+    }
+}
+
+@include media($small-desktop) {
+    .container {
+        max-width: #{$laptop + 'px'};
+    }
+}
+
+@include media($laptop) {
+    .container {
+        max-width: #{$tablet + 'px'};
+    }
+}
+
+@include media($tablet) {
+    .container {
+        max-width: #{$mobile + 'px'};
+    }
 }
