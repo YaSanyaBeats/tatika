@@ -1,3 +1,40 @@
 .header {
-    background-color: rgb(185, 185, 185);
+    background-color: green;
+
+    padding: 20px 0;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+    &__burger {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__nav {
+        display: flex;
+        gap: 30px;
+
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__nav-elem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    &__nav-text {
+        font-size: 18px;
+    }
+    &__nav-icon {
+        width: 30px;
+        height: 30px;
+    }
 }

@@ -1,5 +1,43 @@
 <header class="header">
     <div class="header__container container">
-       <h2>Header</h2>
+        <a class="header__burger burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+        </a>
+        @@include('helpers/svg.html', {
+            'class': 'logo logo_white',
+            'icon': 'logo'
+        })
+        <div class="header__nav">
+            <div class="header__nav-elem">
+                @@include('helpers/svg.html', {
+                    'class': 'header__nav-icon',
+                    'icon': 'search'
+                })
+                <span class="header__nav-text">Поиск</span>
+            </div>
+            <div class="header__nav-elem">
+                @@include('helpers/svg.html', {
+                    'class': 'header__nav-icon',
+                    'icon': 'account'
+                })
+                <span class="header__nav-text">Войти</span>
+            </div>
+            <div class="header__nav-elem">
+                @@include('helpers/svg.html', {
+                    'class': 'header__nav-icon',
+                    'icon': 'heart'
+                })
+                <span class="header__nav-text">Нравится</span>
+            </div>
+            <div class="header__nav-elem">
+                @@include('helpers/svg.html', {
+                    'class': 'header__nav-icon',
+                    'icon': 'cart'
+                })
+                <span class="header__nav-text">Корзина</span>
+            </div>
+        </div>
     </div>
 </header>
