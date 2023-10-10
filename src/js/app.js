@@ -1,3 +1,5 @@
+import Header from './modules/Header.js';
+
 const isMobile = document.documentElement.clientWidth < 768;
 const isTablet = document.documentElement.clientWidth < 1140;
 
@@ -19,8 +21,15 @@ function isWebp() {
     });
 }
 
+function initHeader() {
+    const headerNode = document.querySelector('header');
+    if(headerNode) {
+        return new Header(headerNode);
+    }
+}
+
 isWebp();
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    
+    const header = initHeader();
 })

@@ -1,0 +1,15 @@
+.hero {
+    background: url('@img/hero.jpg') no-repeat 50% 50%;
+    background-size: cover;
+
+    min-height: 100vh;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 80vh;
+    }
+    &__btn {
+        min-width: 400px;
+    }
+}

@@ -1,7 +1,15 @@
 .header {
-    background-color: green;
+    border-bottom: 1px solid $white;
 
     padding: 20px 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    color: $white;
+    transition: background-color .3s;
     &__container {
         display: flex;
         justify-content: center;
@@ -23,18 +31,93 @@
         right: 15px;
         top: 50%;
         transform: translateY(-50%);
+        
+        transition: gap .3s;
     }
     &__nav-elem {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 8px;
+        transition: opacity .2s;
+
+        text-decoration: none;
+        
+        @include any-hover {
+            
+            & .header {
+                &__nav-text {
+                    opacity: 0.8;
+                }
+                &__nav-icon {
+                    transform: scale(1.05);
+                }
+            }
+        }
     }
     &__nav-text {
         font-size: 18px;
+
+        transition: .3s;
+
+        overflow: hidden;
+
+        max-height: 40px;
+        max-width: 100px;
     }
     &__nav-icon {
         width: 30px;
         height: 30px;
+        fill: white;
+
+        transition: .2s;
+    }
+
+    &_scroll {
+        & .logo {
+            height: 70px;
+        }
+        & .burger {
+            gap: 9px;
+            &__line {
+                width: 50px;
+            }
+            @include any-hover {
+                gap: 11px;
+            }
+        }
+        & .header {
+            &__nav {
+                gap: 15px;
+            }
+            &__nav-elem {
+                gap: 0;
+            }
+            &__nav-text {
+                opacity: 0;
+                max-height: 0;
+                max-width: 0;
+            }
+        }
+    }
+
+    &_white {
+        background-color: $white;
+        color: $black;
+        & .logo {
+            fill: $black;
+        }
+        & .burger {
+            &__line {
+                background-color: $black;
+            }
+        }
+
+        & .header {
+            &__nav-icon {
+                fill: $black;
+            }
+        }
     }
 }
