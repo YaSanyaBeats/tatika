@@ -1,5 +1,106 @@
 <footer class="footer">
     <div class="footer__container container">
-        <h2>Footer</h2>
+        <div class = "footer__block footer__block_line">
+            <div class = "footer__block-left">
+                <span class = "footer-block-elem__title">Новостная рассылка</span>
+                <form class = "footer-block-elem__form">
+                    <div class = "footer-block-elem__form-part">
+                        <input class = "footer-block-elem__input" type="email" id="email" placeholder="example@gmail.com" required />
+                        <span class = "footer-block-elem__text footer-block-elem__label">Дарим скидку 5% за подписку на следующую покупку</span>
+                    </div>
+                    <button class = "footer-block-elem__button btn btn_border" >Подписаться</button>
+                </form>
+            </div>
+            <div class = "footer__block-right">
+                <span class = "footer-block-elem__title">По всем вопросам:</span>
+                <div class = "footer-block-elem__content">
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__link_line footer-block-elem__text">info@tatikawear.ru</a>
+                    <span class = "footer-block-elem__text">Время ответа может<br>занимать до 24 часов</span>
+                </div>
+            </div>
+        </div>
+        <div class = "footer__block footer__block_line footer__block_indent">
+            <div class = "footer__block-elem">
+                <span class = "footer-block-elem__title">Информация</span>
+                <div class = "footer-block-elem__content">
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Договор оферты</a>
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Политика конфиденциальности</a>
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Уведомление об использовании<br>Cookie файлов</a>
+                </div>
+            </div>
+            <div class = "footer__block-elem">
+                <span class = "footer-block-elem__title">Каталог</span>
+                <div class = "footer-block-elem__content">
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Женщины</a>
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Мужчины</a>
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text"><span>Дети</span></a>
+                </div>
+            </div>
+            <div class = "footer__block-elem">
+                <span class = "footer-block-elem__title">Покупателям</span>
+                <div class = "footer-block-elem__content">
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Доставка и оплата</a>
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Возврат и обмен</a>
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Контакты</a>
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Условия бонусной программы</a>
+                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Отписаться от рассылки</a>
+                </div>
+            </div>
+            <div class = "footer__block-elem footer__block-elem_right">
+                <a href="/" class="logo__wrapper footer__logo">
+                    @@include('helpers/svg.html', {
+                        'class': 'logo logo_white',
+                        'icon': 'logo'
+                    })
+                </a>
+                <div class = "social-links footer__social-links">
+                    <a href = "#" class = "social-link footer__social-link">
+                        @@include('helpers/svg.html', {
+                            'class': 'social-link__icon social-link__telegram',
+                            'icon': 'telegram'
+                        })
+                    </a>
+                    <a href = "#" class = "social-link footer__social-link">
+                        @@include('helpers/svg.html', {
+                            'class': 'social-link__icon social-link__mail',
+                            'icon': 'mail'
+                        })
+                    </a>
+                    <a href = "#" class = "social-link footer__social-link footer__social-link_instagram">
+                        @@include('helpers/svg.html', {
+                            'class': 'social-link__icon ',
+                            'icon': 'instagram'
+                        })
+                    </a>
+                    <a href = "#" class = "social-link footer__social-link">
+                        @@include('helpers/svg.html', {
+                            'class': 'social-link__icon',
+                            'icon': 'whatsapp'
+                        })
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class = "footer__block footer__block_indent footer__block_last">
+            <div class = "footer__block-elem">
+                <span class = "footer-block-elem__text">г. Москва ул. Пресненская<br>набережная 2, ТЦ "Афимол", 1 этаж</span>
+            </div>
+            <div class = "footer__block-elem footer__block-elem_row">
+                <div class="payment__wrapper">
+                    <img class = "payment-icon" src = "images/payment/visa.svg">
+                </div>
+                <div class="payment__wrapper">
+                    <img class = "payment-icon" src = "images/payment/master-card.svg">
+                </div>
+                <div class="payment__wrapper">
+                    <img class = "payment-icon" src = "images/payment/master-card2.svg">
+                </div>
+            </div>
+            <div class = "footer__block-elem footer__block-elem_right">
+                <span class = "footer-block-elem__text">Все права защищены</span>
+                <span class = "footer-block-elem__text">© tatikawear 2023</span>
+                <span class = "footer-block-elem__text footer-block-elem__text-accent">*Запрещенная в РФ соц.сеть</span>
+            </div>
+        </div>
     </div>
 </footer>
