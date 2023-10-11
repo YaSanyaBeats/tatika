@@ -31,11 +31,20 @@ function initHeader() {
 isWebp();
 
 
-function initLoockBoock(){
-
+function initCollectionSlider(){
+    const swiper = new Swiper('.collection-slider__swiper', {
+        slidesPerView: 3,
+        speed: 400,
+        freeMode: true,
+        spaceBetween: 100,
+        loop: true,
+        navigation: {
+            nextEl: '.collection-slider__next',
+        }
+      });
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
-    initLoockBoock();
+    initCollectionSlider();
 })
