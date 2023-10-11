@@ -30,6 +30,12 @@ function initHeader() {
 
 isWebp();
 
+
+function initLoockBoock(){
+
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
+    initLoockBoock();
 })
