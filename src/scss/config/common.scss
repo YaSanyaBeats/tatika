@@ -12,7 +12,16 @@
 
     transition: transform .3s;
 }
-
+.swiper-button-next {
+    z-index: 1 !important;
+    top: 55%;
+    height: 10% !important;
+    width: 10% !important;
+}
+.main-title {
+    font-size: 65px;
+    font-weight: 400;
+}
 .btn:hover {
     transform: scale(1.1);
 }

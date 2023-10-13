@@ -43,8 +43,21 @@ function initCollectionSlider(){
         }
       });
 }
+function initNoveltySlider(){
+    const swiper = new Swiper('.novelty-slider__swiper', {
+        slidesPerView: 3,
+        speed: 400,
+        freeMode: true,
+        spaceBetween: 100,
+        loop: true,
+        navigation: {
+            nextEl: '.novelty-slider__next',
+        }
+      });
+}
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
     initCollectionSlider();
+    initNoveltySlider();
 })
