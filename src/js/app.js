@@ -55,9 +55,41 @@ function initNoveltySlider(){
         }
       });
 }
+function initBurgerButton(){
+    const buttonBurger = document.querySelector(".header__burger");
+    const sidebar = document.querySelector(".header__sidebar");
+    buttonBurger.addEventListener("click", (event) => {
+        sidebar.style.left = "0";
+    });
 
+    const buttonClose = document.querySelector(".header-sidebar__close")
+    buttonClose.addEventListener("click", (event) => {
+        sidebar.style.left = "-374px";
+    });
+}
+const hasClass = (el, className) => el.classList.contains(className);
+function initBurgerMenuElements(){
+    const links = document.querySelectorAll(".header-sidebar__element");
+    links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+
+            if (!hasClass(link,"header-sidebar__element_active")) 
+            {
+                let activeOldLink = document.querySelector(".header-sidebar__element_active");
+                if (activeOldLink) activeOldLink.classList.remove("header-sidebar__element_active");
+                link.classList.add("header-sidebar__element_active");
+            }
+            else
+            {
+                link.classList.remove("header-sidebar__element_active");
+            }
+        });
+      });
+}
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
     initCollectionSlider();
     initNoveltySlider();
+    initBurgerButton();
+    initBurgerMenuElements();
 })
