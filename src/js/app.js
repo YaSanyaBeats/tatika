@@ -58,12 +58,15 @@ function initNoveltySlider(){
 function initBurgerButton(){
     const buttonBurger = document.querySelector(".header__burger");
     const sidebar = document.querySelector(".header__sidebar");
+    const sidebar_background = document.querySelector(".header__sidebar-background");
     buttonBurger.addEventListener("click", (event) => {
+        sidebar_background.style.display = "block";
         sidebar.style.left = "0";
     });
 
     const buttonClose = document.querySelector(".header-sidebar__close")
     buttonClose.addEventListener("click", (event) => {
+        sidebar_background.style.display = "none";
         sidebar.style.left = "-374px";
     });
 }

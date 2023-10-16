@@ -134,6 +134,15 @@
         background-color: $white;
         transition: all .5s ease;
     }
+    &__sidebar-background {
+        z-index: 10;
+        background-color: $black;
+        opacity: 70%;
+        position: fixed;
+        width: 200vw;
+        height: 100vh;
+        display: none;
+    }
 }
 .header-sidebar {
     &__close{
