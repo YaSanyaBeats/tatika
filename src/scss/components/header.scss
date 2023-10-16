@@ -170,9 +170,10 @@
         }
         &_active{
             .header-sidebar__ul{
-                display: block;
-                transition: .3s;
-                opacity: 1;
+                //display: block;
+                //transition: .3s;
+                //opacity: 1;
+                max-height: 300px;
             }
             .header-sidebar__shevron{
                 transform: scale(1, 1);
@@ -200,10 +201,13 @@
     &__ul {
     margin-top: 10px;
     list-style: none;       
-    display: none;
-    transition: .3s;
+    /*display: none;*/
+    /*transition: .3s;*/
     padding: 0;
-    opacity: 0;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease max-height;
 
     }
 
