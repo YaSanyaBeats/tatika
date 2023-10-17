@@ -11,6 +11,9 @@
 
     color: $white;
     transition: background-color .3s;
+    &__wrapper {
+        min-height: 200px;
+    }
     &__container {
         display: flex;
         justify-content: center;
@@ -106,6 +109,7 @@
     &_white {
         background-color: $white;
         color: $black;
+        border-bottom-color: $black;
         & .logo {
             fill: $black;
         }
