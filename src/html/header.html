@@ -1,6 +1,62 @@
-<div class = "header__sidebar-background"></div>
-<div class = "header__sidebar">
-    <a href="#" class = "header-sidebar__close">
+<div class="header__wrapper">
+    <header class="header header_white">
+        <div class="header__container container">
+            <a href="#" class="header__burger burger">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </a>
+            <a href="/" class="logo__wrapper">
+                @@include('helpers/svg.html', {
+                    'class': 'logo logo_white',
+                    'icon': 'logo'
+                })
+            </a>
+            <div class="header__nav">
+                <a href="#" class="header__nav-elem">
+                    @@include('helpers/svg.html', {
+                        'class': 'header__nav-icon',
+                        'icon': 'search'
+                    })
+                    <span class="header__nav-text">Поиск</span>
+                </a>
+                <a href="#" class="header__nav-elem">
+                    @@include('helpers/svg.html', {
+                        'class': 'header__nav-icon',
+                        'icon': 'account'
+                    })
+                    <span class="header__nav-text">Войти</span>
+                </a>
+                <a href="#" class="header__nav-elem">
+                    @@include('helpers/svg.html', {
+                        'class': 'header__nav-icon',
+                        'icon': 'heart'
+                    })
+                    <span class="header__nav-text">Нравится</span>
+                </a>
+                <a href="#" class="header__nav-elem">
+                    @@include('helpers/svg.html', {
+                        'class': 'header__nav-icon',
+                        'icon': 'cart'
+                    })
+                    <span class="header__nav-text">Корзина</span>
+                </a>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div class="header__breadcrumbs breadcrumbs container">
+    <a href="#" class="breadcrumbs__link">Главная</a>
+    <span class="breadcrumbs__separator">/</span>
+    <a href="#" class="breadcrumbs__link">Женщины</a>
+    <span class="breadcrumbs__separator">/</span>
+    <span class="breadcrumbs__text">Платья</span>
+</div>
+
+<div class="header__sidebar">
+
+    <a href="#" class="header-sidebar__close">
         @@include('helpers/svg.html', {
             'class': 'header-sidebar__close-icon',
             'icon': 'close'
@@ -8,118 +64,72 @@
         <span class="header-sidebar__close-text">Закрыть</span>
     </a>
 
-    <ul class = "header-sidebar__menu">
-        <li class = "header-sidebar__element">
-            <a href="#" class = "header-sidebar__title header-sidebar__title_first">Новинки
+    <ul class="header-sidebar__menu">
+        <li class="header-sidebar__element">
+            <a href="#" class="header-sidebar__title header-sidebar__title_first">Новинки
             </a>
         </li>
-        <li class = "header-sidebar__element">
-            <a href="#" class = "header-sidebar__title">Женщины
+        <li class="header-sidebar__element">
+            <a href="#" class="header-sidebar__title">Женщины
                 @@include('helpers/svg.html', {
                     'class': 'header-sidebar__shevron',
                     'icon': 'shevron-bottom'
                 })
             </a>
-            <ul class = "header-sidebar__ul">
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Vegan leather</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Knit premium Collection</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Нижнее белье</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Бесшовные</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Штаны</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Футболки</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Худи</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Сумки и рюкзаки</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Рубашки</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Платья</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Обувь</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Костюмы</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Комбинезоны</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Коллекция шелк</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Для дома<br>и активного отдыха</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Деним</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Верхняя одежда</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Велосипедки и топы</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Акссесуары</a></li>
+            <ul class="header-sidebar__ul">
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Vegan leather</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Knit premium Collection</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Нижнее белье</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Бесшовные</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Штаны</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Футболки</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Худи</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Сумки и рюкзаки</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Рубашки</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Платья</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Обувь</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Костюмы</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Комбинезоны</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Коллекция шелк</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Для дома<br>и активного отдыха</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Деним</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Верхняя одежда</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Велосипедки и топы</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Акссесуары</a></li>
             </ul>
         </li>
-        <li class = "header-sidebar__element">
-            <a href="#" class = "header-sidebar__title">Мужчины
+        <li class="header-sidebar__element">
+            <a href="#" class="header-sidebar__title">Мужчины
                 @@include('helpers/svg.html', {
                     'class': 'header-sidebar__shevron',
                     'icon': 'shevron-bottom'
                 })
             </a>
-            <ul class = "header-sidebar__ul">
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Vegan leather</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Knit premium Collection</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Нижнее белье</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Бесшовные</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Штаны</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Футболки</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Худи</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Сумки и рюкзаки</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Рубашки</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Платья</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Обувь</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Костюмы</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Комбинезоны</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Коллекция шелк</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Для дома<br>и активного отдыха</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Деним</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Верхняя одежда</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Велосипедки и топы</a></li>
-                <li class = "header-sidebar__li"><a href="#" class = "header-sidebar__link">Акссесуары</a></li>
+            <ul class="header-sidebar__ul">
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Vegan leather</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Knit premium Collection</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Нижнее белье</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Бесшовные</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Штаны</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Футболки</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Худи</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Сумки и рюкзаки</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Рубашки</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Платья</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Обувь</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Костюмы</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Комбинезоны</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Коллекция шелк</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Для дома<br>и активного отдыха</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Деним</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Верхняя одежда</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Велосипедки и топы</a></li>
+                <li class="header-sidebar__li"><a href="#" class="header-sidebar__link">Акссесуары</a></li>
             </ul>
         </li>
-        <li class = "header-sidebar__element">
-            <a href="#" class = "header-sidebar__title">Дети
+        <li class="header-sidebar__element">
+            <a href="#" class="header-sidebar__title">Дети
             </a>
         </li>
     </ul>
 </div>
-<header class="header">
-    <div class="header__container container">
-        <a href="#" class="header__burger burger">
-            <div class="burger__line"></div>
-            <div class="burger__line"></div>
-            <div class="burger__line"></div>
-        </a>
-        <a href="/" class="logo__wrapper">
-            @@include('helpers/svg.html', {
-                'class': 'logo logo_white',
-                'icon': 'logo'
-            })
-        </a>
-        <div class="header__nav">
-            <a href="#" class="header__nav-elem">
-                @@include('helpers/svg.html', {
-                    'class': 'header__nav-icon',
-                    'icon': 'search'
-                })
-                <span class="header__nav-text">Поиск</span>
-            </a>
-            <a href="#" class="header__nav-elem">
-                @@include('helpers/svg.html', {
-                    'class': 'header__nav-icon',
-                    'icon': 'account'
-                })
-                <span class="header__nav-text">Войти</span>
-            </a>
-            <a href="#" class="header__nav-elem">
-                @@include('helpers/svg.html', {
-                    'class': 'header__nav-icon',
-                    'icon': 'heart'
-                })
-                <span class="header__nav-text">Нравится</span>
-            </a>
-            <a href="#" class="header__nav-elem">
-                @@include('helpers/svg.html', {
-                    'class': 'header__nav-icon',
-                    'icon': 'cart'
-                })
-                <span class="header__nav-text">Корзина</span>
-            </a>
-        </div>
-    </div>
-
-</header>

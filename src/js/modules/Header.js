@@ -1,7 +1,7 @@
 class Header {
     constructor(root) {
         this.root = root;
-        this.isWhite = this.root.classList.contains('header__white');
+        this.isWhite = this.root.classList.contains('header_white');
 
         this.bindListeners();
     }

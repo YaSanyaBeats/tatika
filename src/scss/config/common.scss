@@ -72,3 +72,19 @@
         opacity: .8;
     }
 }
+
+.breadcrumbs {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    &__link {
+        text-decoration: none;
+        opacity: .6;
+        transition: opacity .3s;
+        @include any-hover {
+            opacity: 1;
+        }
+    }
+    &__separator {}
+    &__text {}
+}
