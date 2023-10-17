@@ -79,6 +79,7 @@
     }
 
     &_scroll {
+        background-color: $white;
         & .logo {
             height: 70px;
         }
@@ -107,7 +108,7 @@
     }
 
     &_white {
-        background-color: $white;
+        //background-color: $white;
         color: $black;
         border-bottom-color: $black;
         & .logo {

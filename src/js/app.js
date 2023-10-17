@@ -89,10 +89,24 @@ function initBurgerMenuElements(){
         });
       });
 }
+function initEquipmentAccordion() {
+    const equipmentCards = document.querySelectorAll('.accordion__elem');
+    if(equipmentCards.length > 0) {
+        equipmentCards.forEach((card) => {
+            const button = card.querySelector('.accordion__button');
+            button.addEventListener('click', (event) => {
+                card.classList.toggle('accordion__elem_active');
+                button.classList.toggle('accordion-button_active')
+            })
+        })
+    }
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
     initCollectionSlider();
     initNoveltySlider();
     initBurgerButton();
     initBurgerMenuElements();
+    initEquipmentAccordion();
 })

@@ -1,0 +1,130 @@
+<section class="product-card-main">
+    <div class="product-card-main__container container">
+
+
+        <div class="product-card-main__left">
+
+            <div class="product-card-main__other-image">
+                <div class = "product-card-main__image-wrapper">
+                    <img src="images/product-card2.jpg" alt="">
+                </div>
+
+                <div class = "product-card-main__image-wrapper">
+                    <img src="images/product-card3.jpg" alt="">
+                </div>
+
+                <div class = "product-card-main__image-wrapper"></div>
+                    <img src="images/product-card4.jpg" alt="">
+                </div>
+            </div>
+
+            <div class = "product-card-main__image-wrapper_main"></div>
+                <img class="product-card-main__image" src="images/product-card1.jpg" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="product-card-main__right">
+            <span class="product-card-main__title">Костюм топ и юбка Kim</span>
+            <span class="product-card-main__articul">Арт: 1046</span>
+            <span class="product-card-main__price">8 950 Руб.</span>
+            <div class="product-card-main__colors-block">
+                <ul>
+                    <li>
+                    <label>
+                        <input type="radio" class="product-card-main__color" name="color" value="black">
+                        <span class="product-card-main__swatch" style="background-color:#0C0B10"></span> 
+                        <p class = "product-card-main__color-label">Черный</p>
+                    </label>
+                    </li>
+                    <li>
+                    <label>
+                        <input type="radio" class="product-card-main__color" name="color" value="beige">
+                        <span class="product-card-main__swatch" style="background-color:#AD978A"></span> 
+                        <p class = "product-card-main__color-label">Бежевый</p>
+                    </label>
+                    </li>
+                    <li>
+                    <label>
+                        <input type="radio" class="product-card-main__color" name="color" value="gray">
+                        <span class="product-card-main__swatch" style="background-color:#8F9FA3"></span> 
+                        <p class = "product-card-main__color-label">Серый</p>
+                    </label>
+                    </li>
+                </ul> 
+            </div>
+            <a href = '#' class="product-card-main__question">Как выбрать размер?</a>
+            <select name="select-size" id="select-size" class = "product-card-main__size">
+                <option value="">Выберите размер</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+            </select>
+            <div>
+                <button href = '#' class="product-card-main__btn btn">Добавить в корзину</button>
+                @@include('helpers/svg.html', {
+                    'class': 'product-card-main__heart',
+                    'icon': 'heart'
+                })
+            </div>
+            <div class="accordion questions__accordeon">
+
+                <div class="accordion__elem">
+                    <div class="accordion__header">
+                        <h2 class="accordion__title">Описание</h2>
+                        @@include('helpers/svg.html', {
+                            'class': 'accordion__button',
+                            'icon': 'shevron-bottom'
+                        })
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__elem">
+                    <div class="accordion__header">
+                        <h2 class="accordion__title">Состав и Уход</h2>
+                        @@include('helpers/svg.html', {
+                            'class': 'accordion__button',
+                            'icon': 'shevron-bottom'
+                        })
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__elem">
+                    <div class="accordion__header">
+                        <h2 class="accordion__title">Теги</h2>
+                        @@include('helpers/svg.html', {
+                            'class': 'accordion__button',
+                            'icon': 'shevron-bottom'
+                        })
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+</section>
