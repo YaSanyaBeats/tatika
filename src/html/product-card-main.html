@@ -3,25 +3,53 @@
 
 
         <div class="product-card-main__left">
+            <div thumbsSlider="" class="product-card-main__swiper product-card-main__mySwiper1 swiper">
+                <div class="product-card-main__swiper-wrapper product-card-main__swiper-wrapper_mini swiper-wrapper">
 
-            <div class="product-card-main__other-image">
-                <div class = "product-card-main__image-wrapper">
-                    <img src="images/product-card2.jpg" alt="">
-                </div>
+                    <div class="product-card-main__swiper-slide_mini swiper-slide">
+                    <img src="images/product-card2.jpg" />
+                    </div>
 
-                <div class = "product-card-main__image-wrapper">
-                    <img src="images/product-card3.jpg" alt="">
-                </div>
+                    <div class="product-card-main__swiper-slide_mini swiper-slide">
+                    <img src="images/product-card3.jpg" />
+                    </div>
 
-                <div class = "product-card-main__image-wrapper"></div>
-                    <img src="images/product-card4.jpg" alt="">
+                    <div class="product-card-main__swiper-slide_mini swiper-slide">
+                    <img src="images/product-card4.jpg" />
+                    </div>
+
+                    
+                    <div class="product-card-main__swiper-slide_mini swiper-slide">
+                    <img src="images/product-card3.jpg" />
+                    </div>
+
+                    
+                    <div class="product-card-main__swiper-slide_mini swiper-slide">
+                    <img src="images/product-card4.jpg" />
+                    </div>
                 </div>
             </div>
-
-            <div class = "product-card-main__image-wrapper_main"></div>
-                <img class="product-card-main__image" src="images/product-card1.jpg" alt="">
+            <div class="product-card-main__swiper product-card-main__mySwiper swiper">
+                <div class="product-card-main__swiper-wrapper product-card-main__swiper-wrapper_main swiper-wrapper">
+                  <div class="product-card-main__swiper-slide swiper-slide">
+                    <img src="images/qualityProduct1.jpg" />
+                  </div>
+                  <div class="product-card-main__swiper-slide swiper-slide">
+                    <img src="images/product-card3.jpg" />
+                  </div>
+                  <div class="product-card-main__swiper-slide swiper-slide">
+                    <img src="images/product-card4.jpg" />
+                  </div>
+                  <div class="product-card-main__swiper-slide swiper-slide">
+                    <img src="images/product-card3.jpg" />
+                  </div>
+                  <div class="product-card-main__swiper-slide swiper-slide">
+                    <img src="images/product-card4.jpg" />
+                  </div>
+                </div>
+                <div class="product-card-main__swiper-button-next"></div>
+                <div class="product-card-main__swiper-button-prev"></div>
             </div>
-
         </div>
 
 
@@ -56,12 +84,12 @@
             </div>
             <a href = '#' class="product-card-main__question">Как выбрать размер?</a>
             <select name="select-size" id="select-size" class = "product-card-main__size">
-                <option value="">Выберите размер</option>
+                <option value="" class = "product-card-main__size-first">Выберите размер</option>
                 <option value="XS">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
             </select>
-            <div>
+            <div class = "product-card-main__add-cart">
                 <button href = '#' class="product-card-main__btn btn">Добавить в корзину</button>
                 @@include('helpers/svg.html', {
                     'class': 'product-card-main__heart',

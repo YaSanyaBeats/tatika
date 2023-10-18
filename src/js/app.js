@@ -93,7 +93,7 @@ function initEquipmentAccordion() {
     const equipmentCards = document.querySelectorAll('.accordion__elem');
     if(equipmentCards.length > 0) {
         equipmentCards.forEach((card) => {
-            const button = card.querySelector('.accordion__button');
+            const button = card.querySelector('.accordion__header');
             button.addEventListener('click', (event) => {
                 card.classList.toggle('accordion__elem_active');
                 button.classList.toggle('accordion-button_active')
@@ -101,7 +101,26 @@ function initEquipmentAccordion() {
         })
     }
 }
-
+function initSliderProductCard(){
+    const swiper = new Swiper(".product-card-main__mySwiper1", {
+        spaceBetween: 50,
+        slidesPerView: 'auto',
+        direction: 'vertical',
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      const swiper2 = new Swiper(".product-card-main__mySwiper", {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+          nextEl: ".product-card-main__swiper-button-next",
+          prevEl: ".product-card-main__swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+}
 document.addEventListener('DOMContentLoaded', (event) => {
     const header = initHeader();
     initCollectionSlider();
@@ -109,4 +128,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initBurgerButton();
     initBurgerMenuElements();
     initEquipmentAccordion();
+    initSliderProductCard();
 })
