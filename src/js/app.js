@@ -165,7 +165,23 @@ function initCardProductLike() {
         like_shevron.classList.toggle('product-card-main__heart_active')
         like_shevron_fill.classList.toggle('product-card-main__heart-fill_active')
     })
-
+}
+function initFirstProductCardSlider(){
+    const swiper = new Swiper('.product-slider__swiper', {
+        slidesPerView: 5,
+        speed: 400,
+        freeMode: true,
+        //spaceBetween: 100,
+        loop: true,
+      });
+}
+function initproductSliderLike() {
+    const like_buttons = document.querySelectorAll('.product-slider__like-link');
+    like_buttons.forEach((like_button) => {
+        like_button.addEventListener('click', (event) => {
+            like_button.classList.toggle('product-slider__like-link_active')
+        })
+    })
 
 }
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -179,4 +195,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     initDropDownCardProduct();
     initCardProductLike();
     initProductSidebarButton();
+    initFirstProductCardSlider();
+    initproductSliderLike();
 })
