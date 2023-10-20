@@ -53,7 +53,10 @@
     <span class="breadcrumbs__separator">/</span>
     <span class="breadcrumbs__text">Платья</span>
 </div>
-<div class = "header__sidebar-background"></div>
+
+<div class = "header__sidebar-background">
+</div>
+
 <div class="header__sidebar">
     <a href="#" class="header-sidebar__close">
         @@include('helpers/svg.html', {
@@ -130,4 +133,76 @@
             </a>
         </li>
     </ul>
+</div>
+
+<div class="product__sidebar">
+    <div class="product-sidebar__title">
+        <a href="#" class="product-sidebar__close">
+            @@include('helpers/svg.html', {
+                'class': 'product-sidebar__close-icon',
+                'icon': 'close'
+            })
+        </a>
+        <span class="product-sidebar__close-text">Таблица размеров</span>
+    </div>
+
+    <div class = "product-sidebar__table">
+        <span class = "product-sidebar-table__title">Топ</span>
+        <table>
+            <tr>
+                <td class = "product-sidebar-table__text">Размер</td>
+                <td class = "product-sidebar-table__text">Длина от плеча</td>
+                <td class = "product-sidebar-table__text">Ширина в<br>области груди</td>
+                <td class = "product-sidebar-table__text">Ширина по низу</td>
+            </tr>
+            <tr>
+                <td class = "product-sidebar-table__text">XS</td>
+                <td class = "product-sidebar-table__text">36</td>
+                <td class = "product-sidebar-table__text">27</td>
+                <td class = "product-sidebar-table__text">22</td>
+            </tr>
+            <tr>
+                <td class = "product-sidebar-table__text">S</td>
+                <td class = "product-sidebar-table__text">37</td>
+                <td class = "product-sidebar-table__text">29</td>
+                <td class = "product-sidebar-table__text">24</td>
+            </tr>
+            <tr>
+                <td class = "product-sidebar-table__text">M</td>
+                <td class = "product-sidebar-table__text">38</td>
+                <td class = "product-sidebar-table__text">31</td>
+                <td class = "product-sidebar-table__text">26</td>
+            </tr>
+          </table>
+    </div>
+    <div class = "product-sidebar__table">
+        <span class = "product-sidebar-table__title">Низ</span>
+        <table>
+            <tr>
+                <td class = "product-sidebar-table__text">Размер</td>
+                <td class = "product-sidebar-table__text">Длина с поясом</td>
+                <td class = "product-sidebar-table__text">Объем в<br>области бедер</td>
+                <td class = "product-sidebar-table__text">Ширина в<br>области талии</td>
+            </tr>
+            <tr>
+                <td class = "product-sidebar-table__text">XS</td>
+                <td class = "product-sidebar-table__text">78</td>
+                <td class = "product-sidebar-table__text">78</td>
+                <td class = "product-sidebar-table__text">80</td>
+            </tr>
+            <tr>
+                <td class = "product-sidebar-table__text">S</td>
+                <td class = "product-sidebar-table__text">90-92</td>
+                <td class = "product-sidebar-table__text">92-95</td>
+                <td class = "product-sidebar-table__text">95-100</td>
+            </tr>
+            <tr>
+                <td class = "product-sidebar-table__text">M</td>
+                <td class = "product-sidebar-table__text">32</td>
+                <td class = "product-sidebar-table__text">33</td>
+                <td class = "product-sidebar-table__text">34</td>
+            </tr>
+        </table>
+        <span class = "product-sidebar-table__title ">Все размеры указаны в см.</span>
+    </div>
 </div>

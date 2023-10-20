@@ -83,18 +83,36 @@
                 </ul> 
             </div>
             <a href = '#' class="product-card-main__question">Как выбрать размер?</a>
-            <select name="select-size" id="select-size" class = "product-card-main__size">
-                <option value="" class = "product-card-main__size-first">Выберите размер</option>
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-            </select>
+
+
+            <div class="product-card-main__size">
+                <div class = "product-card-main__size-button">
+                    <span class = "product-card-main__size-first">Выберите размер</span>
+                    @@include('helpers/svg.html', {
+                        'class': 'accordion__button product-card-main__size-shevron',
+                        'icon': 'shevron-bottom'
+                    })
+                    <input class = "size-input" type = "hidden" name = "size">
+                </div>
+                <ul class = "size__dropdown-menu">
+                    <li id="XS" class = "size-dropdown-menu__element">XS</li>
+                    <li id="S" class = "size-dropdown-menu__element">S</li>
+                    <li id="M" class = "size-dropdown-menu__element">M</li>
+                </ul>
+            </div>
+
             <div class = "product-card-main__add-cart">
                 <button href = '#' class="product-card-main__btn btn">Добавить в корзину</button>
+                <a href = "#" class = "product-card-main__like">
                 @@include('helpers/svg.html', {
                     'class': 'product-card-main__heart',
                     'icon': 'heart'
                 })
+                @@include('helpers/svg.html', {
+                    'class': 'product-card-main__heart-fill',
+                    'icon': 'heart-fill'
+                })
+                </a>
             </div>
             <div class="accordion questions__accordeon">
 

@@ -21,7 +21,6 @@
     }
     &_mini {
       display: flex !important;
-      //flex-direction: column!important;
       width: 30%!important;
       margin: 0 !important;
       height: min-content !important;
@@ -41,17 +40,12 @@
       }
     }
   }
-  &__swiper-button-next {
-  }
-  &__swiper-button-prev {
-  }
   &__mySwiper {
     display: flex;
     height: min-content;
     width: 75% !important;
   }
   &__mySwiper1 {
-    //display: flex !important;
     width: 25% !important;
   }
   &__right {
@@ -83,7 +77,6 @@
       margin: 0;
     }
     li{
-      //margin: 0 20px 0 0; 
       display: inline-block;
     }
     label{
@@ -128,19 +121,34 @@
     margin-left: auto;
   }
   &__size {
+    position: relative;
     margin-top: 15px;
-    padding: 15px 0px 15px 0px;
     text-align: center;
-    background-color: $accent;
-    border-color: $accent-dark;
-    option{
-      //text-align: left;
-      border: 1px solid $accent;
-    }
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    font-weight: 400;
+    
   }
   &__size-first{
     text-align: center !important; 
-    display: none;
+  }
+  &__size-button{
+    border: 1px solid $accent-dark;
+    padding: 15px 0 15px 0;
+    background-color: $accent;
+    position: relative;
+  }
+  &__size-shevron{
+    position: absolute;
+    right: 40px;
+    top: 33%;
+    bottom: auto;
+    transition: .5s;
+    &_active{
+      transform: scale(-1, -1);
+      transition: .5s;
+    }
   }
   &__btn {
     width: 100%;
@@ -152,26 +160,30 @@
   &__heart{
     width: 50px;
     height: 50px;
+    padding-right: 10px;
+    &_active{
+      display: none;
+    }
+  }
+  &__heart-fill{
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    display: none;
+    &_active{
+      display: block;
+    }
   }
   &__add-cart{
     margin-top: 30px;
     display: flex;
+    align-items: center;
     gap: 30px;
   }
 }
-.container {
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.btn {
-}
 .accordion {
   &__elem {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $accent-dark;
     padding: 15px 0;  
   }
   &__header {
@@ -194,8 +206,11 @@
   &__button{
     width: 20px;
     height: 20px;
-  }
-  &__text {
+    transition: .5s;
+    &_active{
+      transform: scale(-1, -1);
+      transition: .5s;
+    }
   }
 }
 
@@ -212,4 +227,117 @@
 .accordion__elem_active .accordion__content {
 max-height: 600px;
 margin-top: 30px;
+}
+.size-chevron-left{
+
+}
+.size__dropdown-menu{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-height: 0;
+  transition: .6s;
+  overflow: hidden;
+  margin: 0;
+  li{
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 0 10px 0;
+    border-top: 1px solid $accent-dark;
+    padding-left: 15px;
+    background-color: $accent;
+    &:hover{
+      opacity: 60%;
+      transition: .4s;
+    }
+  }
+  &_active{
+    max-height: 100%;
+    transition: .6s;
+  }
+}
+
+
+
+.product {
+
+  &__sidebar-background {
+    z-index: 10;
+    background-color: $black;
+    opacity: 70%;
+    position: fixed;
+    width: 200vw;
+    height: 100vh;
+    display: none;
+  }
+
+  &__sidebar {
+    z-index: 11;
+    position: fixed;
+    width: 700px;
+    right: -700px;
+    height: 100%;
+    background-color: $white;
+    transition: all .5s ease;
+  }
+}
+.product-sidebar {
+
+  &__close {
+    padding-left: 30px;
+    display: flex;
+    text-decoration: none;
+    gap: 5px;
+    align-items: center;
+    &:hover{
+            transform: scale(1.1);
+            transition: .3s;
+    }
+  }
+  &__close-icon{
+    width: 25px;
+    height: 25px;
+  }
+  &__close-text {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__title{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+  }
+}
+
+
+
+
+.product-sidebar {
+
+  &__table {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.product-sidebar-table {
+
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid $black;
+    padding: 10px 0 10px 0;
+    width: 25%;
+    text-align: center;
+  }
 }
