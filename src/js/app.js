@@ -1,5 +1,4 @@
 import Header from './modules/Header.js';
-
 const isMobile = document.documentElement.clientWidth < 768;
 const isTablet = document.documentElement.clientWidth < 1140;
 
@@ -93,10 +92,13 @@ function initProductSidebarButton(){
     const button = document.querySelector(".product-card-main__question");
     const sidebar = document.querySelector(".product__sidebar");
     const sidebar_background = document.querySelector(".header__sidebar-background");
-    button.addEventListener("click", (event) => {
-        sidebar_background.style.display = "block";
-        sidebar.style.right = "0";
-    });
+    if(button)
+    {
+        button.addEventListener("click", (event) => {
+            sidebar_background.style.display = "block";
+            sidebar.style.right = "0";
+        });
+    }
 
     const buttonClose = document.querySelector(".product-sidebar__close")
     buttonClose.addEventListener("click", (event) => {
@@ -141,30 +143,36 @@ function initSliderProductCard(){
 function initDropDownCardProduct(){
     const dropdown_button = document.querySelector('.product-card-main__size-button')
     const dropdown_shevron = document.querySelector('.product-card-main__size-shevron')
-    dropdown_button.addEventListener('click', (event) => {
-        let dropdown_menu = document.querySelector('.size__dropdown-menu')
-        dropdown_menu.classList.toggle('size__dropdown-menu_active')
-        dropdown_shevron.classList.toggle('product-card-main__size-shevron_active')
-    })
-    const dropdown_elements = document.querySelectorAll('.size-dropdown-menu__element')
-    const dropdown_input = document.querySelector('.size-input')
-    dropdown_elements.forEach((element) => {
-        element.addEventListener('click', (event) => {
-            let text = element.textContent
-            let button_text = document.querySelector('.product-card-main__size-first')
-            button_text.innerHTML = text
-            dropdown_input.setAttribute("value", text);
+    if (dropdown_button)
+    {
+        dropdown_button.addEventListener('click', (event) => {
+            let dropdown_menu = document.querySelector('.size__dropdown-menu')
+            dropdown_menu.classList.toggle('size__dropdown-menu_active')
+            dropdown_shevron.classList.toggle('product-card-main__size-shevron_active')
         })
-    })
+        const dropdown_elements = document.querySelectorAll('.size-dropdown-menu__element')
+        const dropdown_input = document.querySelector('.size-input')
+        dropdown_elements.forEach((element) => {
+            element.addEventListener('click', (event) => {
+                let text = element.textContent
+                let button_text = document.querySelector('.product-card-main__size-first')
+                button_text.innerHTML = text
+                dropdown_input.setAttribute("value", text);
+            })
+        })
+    }
 }
 function initCardProductLike() {
     const like_button = document.querySelector('.product-card-main__like');
-    const like_shevron = like_button.querySelector('.product-card-main__heart')
-    const like_shevron_fill = like_button.querySelector('.product-card-main__heart-fill')
-    like_button.addEventListener('click', (event) => {
-        like_shevron.classList.toggle('product-card-main__heart_active')
-        like_shevron_fill.classList.toggle('product-card-main__heart-fill_active')
-    })
+    if(like_button)
+    {
+        const like_shevron = like_button.querySelector('.product-card-main__heart')
+        const like_shevron_fill = like_button.querySelector('.product-card-main__heart-fill')
+        like_button.addEventListener('click', (event) => {
+            like_shevron.classList.toggle('product-card-main__heart_active')
+            like_shevron_fill.classList.toggle('product-card-main__heart-fill_active')
+        })
+    }
 }
 function initFirstProductCardSlider(){
     const swiper = new Swiper('.product-slider__swiper', {
