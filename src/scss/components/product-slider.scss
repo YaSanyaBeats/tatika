@@ -4,6 +4,7 @@
         fill: #9F9F9F;
         width: 20px;
         height: 20px;
+        
         &_fill{
             display: none;
         }
@@ -30,6 +31,7 @@
         position: absolute;
         top: 20px;
         right: 15%;
+        z-index: 2;
         &_active{
             .product-slider__like{
                 &_fill{
@@ -59,6 +61,12 @@
 {
     &__slide-image{
         height: 400px;
+        display: flex;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.1);
+            transition: .3s;
+        }
         img{
             object-fit: cover;
             height: 100%;

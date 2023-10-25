@@ -1,0 +1,72 @@
+<section class="reviews">
+    <div class="reviews__container container">
+        <h1 class="reviews__title">Отзывы</h1>
+        <div class="reviews__list">
+            <div class="reviews__review">
+                <div class="reviews-review__left">
+                    <div class="reviews-review__title">
+                        <span class="reviews-review__name">Ольга Осипова</span>
+                        <span class="reviews-review__date">29 сентября 2023</span>
+                    </div>
+                    <div class="reviews-review__stars">
+                        @@include('helpers/svg.html', {
+                            'class': 'reviews-review__star',
+                            'icon': 'star'
+                        })
+                        @@include('helpers/svg.html', {
+                            'class': 'reviews-review__star',
+                            'icon': 'star'
+                        })
+                        @@include('helpers/svg.html', {
+                            'class': 'reviews-review__star',
+                            'icon': 'star'
+                        })
+                        @@include('helpers/svg.html', {
+                            'class': 'reviews-review__star',
+                            'icon': 'star'
+                        })
+                        @@include('helpers/svg.html', {
+                            'class': 'reviews-review__star',
+                            'icon': 'star'
+                        })
+                    </div>
+                    <span class="reviews-review__text">Классный российский дизайнер ( или дизайнерка, как там сейчас правильно ),
+                        выпускающий достойный продукт, превосходящий по качеству и смыслу многие наши и не
+                        наши бренды. Не пожалела, что обратила внимание на неё и вернусь 100℅ с подругой)
+                    </span>
+                </div>
+                <div class="reviews-review__right">
+                    <div class = "novelty-slide__wrapper product-slide__wrapper reviews-card__wrapper">
+                        <a href="#" class = "product-slider__like-link">
+                            @@include('helpers/svg.html', {
+                                'class': 'product-slider__like product-slider__like_default',
+                                'icon': 'heart-mini'
+                            })
+                            @@include('helpers/svg.html', {
+                                'class': 'product-slider__like product-slider__like_fill',
+                                'icon': 'heart-mini-fill'
+                            })
+                        </a>
+                        <a href = "#"  class = "novelty-slide__slide-image product-slide__slide-image">
+                            <img src="images/productCardigan.jpg" alt="">
+                        </a>
+                        <div class="novelty-slider__slide-content">
+                            <span class="novelty-slider__text">Кардиган monogram</span>
+                            <div class = "novelty-slider__colors">
+                                <div class = "novelty-slider__color" style = "background-color: #637791;"></div>
+                                <div class = "novelty-slider__color" style = "background-color: #000000;"></div>
+                                <div class = "novelty-slider__color" style = "background-color: #FFFFFF; border: 1px solid;"></div>
+                            </div>
+                            <div class = "novelty-slider__price-content">
+                                <span class = "novelty-slider__price">6 700 руб.</span>
+                                <s class = "novelty-slider__price_old">9 990 руб.</s>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
