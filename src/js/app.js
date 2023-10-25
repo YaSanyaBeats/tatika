@@ -158,6 +158,10 @@ function initDropDownCardProduct(){
                 let button_text = document.querySelector('.product-card-main__size-first')
                 button_text.innerHTML = text
                 dropdown_input.setAttribute("value", text);
+
+                let dropdown_menu = document.querySelector('.size__dropdown-menu')
+                dropdown_menu.classList.toggle('size__dropdown-menu_active')
+                dropdown_shevron.classList.toggle('product-card-main__size-shevron_active')
             })
         })
     }

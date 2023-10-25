@@ -232,7 +232,9 @@ margin-top: 30px;
 
 }
 .size__dropdown-menu{
-  position: relative;
+  width: 100%;
+  position: absolute;
+  z-index: 11;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -244,17 +246,20 @@ margin-top: 30px;
     list-style-type: none;
     text-align: left;
     padding: 10px 0 10px 0;
-    border-top: 1px solid $accent-dark;
+    border-bottom: 1px solid $accent-dark;
     padding-left: 15px;
     background-color: $accent;
     &:hover{
-      opacity: 60%;
+      //opacity: 60%;
+      background-color: $white;
       transition: .4s;
     }
   }
   &_active{
-    max-height: 100%;
     transition: .6s;
+    max-height: 100vh;
+    width: 100%;
+    transition: 0.6s;
   }
 }
 
