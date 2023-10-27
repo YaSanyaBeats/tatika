@@ -180,11 +180,17 @@ function initCardProductLike() {
 }
 function initFirstProductCardSlider(){
     const swiper = new Swiper('.product-slider__swiper', {
-        slidesPerView: 5,
+        slidesPerView: 3,
         speed: 400,
         freeMode: true,
         //spaceBetween: 100,
         loop: true,
+        breakpoints:
+        {
+            768: {
+            slidesPerView: 5
+            }
+        }
       });
 }
 function initproductSliderLike() {

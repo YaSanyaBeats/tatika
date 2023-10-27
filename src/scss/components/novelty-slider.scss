@@ -49,8 +49,6 @@
         font-size: 20px;
         font-weight: 400;
         &_old{
-            font-size: 20px;
-            font-weight: 400;
             color: $accent-dark;
         }
     }
@@ -79,6 +77,45 @@
         margin: 0 !important;
         img{
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1440px) { 
+  
+    .novelty-slider{
+        &__text{
+            font-size: 18px;
+        }
+        &__price {
+            font-size: 16px;
+        }
+
+    }
+    .novelty-slide{
+        &__slide-image{
+            height: 320px !important; 
+        }
+    }
+}
+@media (max-width: 1200px) { 
+  
+    .novelty-slider{
+        &__text{
+            font-size: 16px;
+        }
+        &__price {
+            font-size: 16px;
+        }
+        &__price-content{
+            gap: 5px;
+            flex-direction: column;
+        }
+
+    }
+    .novelty-slide{
+        &__slide-image{
+            height: 220px !important; 
         }
     }
 }
