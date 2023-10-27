@@ -232,3 +232,83 @@
         }
 }
 
+@media (max-width: 1200px) { 
+    
+    .footer-block-elem{
+        &__title{
+            font-size: 18px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__button{
+
+        }
+        &__input{
+            width: auto;
+        }
+        &__link{
+            font-size: 13px;
+        }
+    }
+    .footer{
+        &__block-right{
+            margin-left: 30px;
+        }
+    }
+
+}
+@media (max-width: 768px) { 
+    
+    .footer-block-elem{
+        &__form{
+            flex-direction: column;
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__button{
+
+        }
+        &__input{
+
+        }
+        &__link{
+            text-align: center;
+        }
+        &__content{
+            align-items: center;
+        }
+    }
+    .footer{
+        &__block_line{
+            flex-direction: column;
+        }
+        &__block-right{
+            margin: 0;
+            margin-top: 30px;
+            align-items: center;
+        }
+        &__block-left{
+            align-items: center;
+        }
+        &__block_indent{
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+            display: flex;
+        }
+        &__block-elem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+    }
+
+}
