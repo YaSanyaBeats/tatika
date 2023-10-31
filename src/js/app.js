@@ -31,20 +31,22 @@ isWebp();
 
 
 function initCollectionSlider(){
-    const swiper = new Swiper('.collection-slider__swiper', {
-        slidesPerView: 3,
+    const collectionSwiper = new Swiper('.collection-slider__swiper', {
+        slidesPerView: 'auto',
+        loop: true,
         speed: 400,
         freeMode: true,
-        spaceBetween: 100,
-        loop: true,
+        spaceBetween: 50,
+        
         navigation: {
             nextEl: '.collection-slider__next',
         }
+
       });
 }
 function initNoveltySlider(){
-    const swiper = new Swiper('.novelty-slider__swiper', {
-        slidesPerView: 3,
+    const noveltySwiper = new Swiper('.novelty-slider__swiper', {
+        slidesPerView: 4,
         speed: 400,
         freeMode: true,
         spaceBetween: 100,
