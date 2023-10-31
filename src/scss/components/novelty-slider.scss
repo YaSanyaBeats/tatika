@@ -18,6 +18,8 @@
     &__slide {
         //width: auto !important;
         //margin-right: 0px !important;
+        height: auto !important;
+        display: flex !important;
     }
 
     &__slide-content {
@@ -59,6 +61,8 @@
         text-transform: none;
         padding: 10px 0;
         width: 70%;
+        display: flex;
+        justify-content: center;
     }
 
     &__next {
@@ -72,6 +76,9 @@
     &__wrapper {
         //width: 500px;
         width: 90%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
         a{
             display: flex;
             //width: 400px;

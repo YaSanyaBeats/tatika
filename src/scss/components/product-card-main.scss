@@ -393,6 +393,9 @@ margin-top: 30px;
     }
   }
  }
+
+
+
  @media (max-width: 768px) { 
   .product-card-main {
 
@@ -414,6 +417,9 @@ margin-top: 30px;
     &__colors-block{
       margin-top: 20px;
     }
+    &__question{
+      margin: 0;
+    }
   }
   .product__sidebar {
     width: 300px;
@@ -426,8 +432,7 @@ margin-top: 30px;
     &__title{
       font-size: 20px;
     }
-  }
-  
+  }  
   .product-sidebar{
     &__title{
       gap: 10px;
@@ -440,5 +445,6 @@ margin-top: 30px;
       font-size: 20px;
     }
   }
- }
+
+}
  

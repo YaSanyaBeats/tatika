@@ -307,6 +307,9 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            &_row{
+                flex-direction: row;
+            }
         }
         
     }

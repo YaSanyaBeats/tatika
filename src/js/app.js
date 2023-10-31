@@ -134,11 +134,17 @@ function initEquipmentAccordion() {
 }
 function initSliderProductCard(){
     const swiper = new Swiper(".product-card-main__mySwiper1", {
-        spaceBetween: 50,
+        spaceBetween: 40,
         slidesPerView: 'auto',
         direction: 'vertical',
         freeMode: true,
         watchSlidesProgress: true,
+        breakpoints:
+        {
+            768: {
+                spaceBetween: 50
+            }
+        }
       });
       const swiper2 = new Swiper(".product-card-main__mySwiper", {
         spaceBetween: 10,
