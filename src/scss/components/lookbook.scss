@@ -1,8 +1,8 @@
 
 .lookbook {
-  margin-top: 100px;
+  margin-top: 200px;
   &__container {
-    height: 1045px;
+    //height: 1045px;
     background-color: $white;
     display: flex;
     align-items: center;
@@ -89,3 +89,40 @@
         transform: scale(1.2);
     }    
   }
+
+@media (max-width: 1440px) { 
+  .lookbook {
+    margin-top: 150px;
+    &__warapper {
+      height: 550px;
+    }
+  }
+}
+@media (max-width: 1200px) { 
+  
+}
+@media (max-width: 768px) { 
+  .lookbook {
+    margin-top: 100px;
+
+    &__warapper {
+
+      height: 400px;
+
+    }
+
+    &__content {
+      top: 55%;
+      gap: 20px;
+    }
+    &__text {
+      font-size: 48px;
+    }
+    &__btn {
+      padding: 10px 40px;
+      font-size: 18px;
+    }
+  }
+
+
+}

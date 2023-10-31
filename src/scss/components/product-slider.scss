@@ -79,4 +79,13 @@
     }
 }
 
+@media (max-width: 1200px) { 
+  
 
+    .product-slide{
+        &__slide-image{
+           height: 220px !important; 
+        }
+        
+    }
+}

@@ -13,3 +13,12 @@
         min-width: 400px;
     }
 }
+@media (max-width: 768px) { 
+    .hero {
+        &__btn {
+            min-width: 100%;
+        }
+    }
+  
+  
+  }

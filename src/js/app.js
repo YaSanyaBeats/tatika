@@ -46,14 +46,23 @@ function initCollectionSlider(){
 }
 function initNoveltySlider(){
     const noveltySwiper = new Swiper('.novelty-slider__swiper', {
-        slidesPerView: 5,
+        slidesPerView: 2,
         //loop: true,
         speed: 400,
         freeMode: true,
-        spaceBetween: 50,
+        //spaceBetween: 50,
         
         navigation: {
             nextEl: '.novelty-slider__next',
+        },
+        breakpoints:
+        {
+            768: {
+            slidesPerView: 5
+            },
+            376: {
+                slidesPerView: 3
+            }
         }
       });
 }

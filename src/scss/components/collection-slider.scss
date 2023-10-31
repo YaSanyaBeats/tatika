@@ -73,6 +73,8 @@
         img{
             opacity: 0.7;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -91,3 +93,112 @@
 .swiper-slide {
 }
 
+@media (max-width: 1440px) { 
+  
+    .collection-slider {
+        &__slide{
+            width: 30% !important;
+        }
+        &__btn{
+            margin-top: 15px;
+            padding: 12px 50px 12px 60px;
+        }
+        
+    }
+    .collection-slider{
+        &__swiper {
+            margin-right: 10% !important;
+        }
+    }
+    .collection-slide{
+        &__slide-image{
+            height: 500px;
+        }
+    }
+}
+@media (max-width: 1140px) { 
+  
+    .collection-slider {
+        margin-top: 50px;
+        &__slide{
+            width: 25% !important;
+        }
+        &__btn{
+            margin-top: 15px;
+            padding: 10px 20px 10px 20px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    
+        
+    }
+    .collection-slide{
+        &__slide-image{
+            height: 350px;
+        }
+    }
+}
+@media (max-width: 960px) { 
+  
+    .collection-slider {
+        &__slide{
+            width: 35% !important;
+        }
+    }
+
+}
+@media (max-width: 768px) { 
+  
+    .collection-slider{
+        &__swiper {
+            padding-left: 15px !important;
+            margin-right: 15% !important;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__btn{
+            margin-top: 10px;
+            font-size: 16px;
+            padding: 5px 10px 5px 10px;
+        }
+    }
+    .collection-slider {
+        &__slide{
+            width: 45% !important;
+        }
+    }
+    .collection-slide{
+        &__slide-image{
+            height: 350px;
+        }
+    }
+}
+@media (max-width: 378px) { 
+  
+    .collection-slider{
+        &__swiper {
+            padding-left: 15px !important;
+            margin-right: 15% !important;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__btn{
+            margin-top: 10px;
+            font-size: 16px;
+            padding: 5px 10px 5px 10px;
+        }
+    }
+    .collection-slider {
+        &__slide{
+            width: 100% !important;
+        }
+    }
+    .collection-slide{
+        &__slide-image{
+            height: 400px;
+        }
+    }
+}

@@ -14,7 +14,7 @@
 }
 .swiper-button-next {
     z-index: 1 !important;
-    top: 55%;
+    top: 55% !important;
     height: 10% !important;
     width: 10% !important;
 }
@@ -90,4 +90,10 @@
 }
 .section-title{
     font-size: 48px;
+}
+@media (max-width: 768px) { 
+  
+    .main-title {
+        font-size: 48px;
+    }
 }
