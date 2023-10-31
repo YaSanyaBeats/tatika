@@ -33,7 +33,7 @@ isWebp();
 function initCollectionSlider(){
     const collectionSwiper = new Swiper('.collection-slider__swiper', {
         slidesPerView: 'auto',
-        loop: true,
+        //loop: true,
         speed: 400,
         freeMode: true,
         spaceBetween: 50,
@@ -46,11 +46,12 @@ function initCollectionSlider(){
 }
 function initNoveltySlider(){
     const noveltySwiper = new Swiper('.novelty-slider__swiper', {
-        slidesPerView: 4,
+        slidesPerView: 5,
+        //loop: true,
         speed: 400,
         freeMode: true,
-        spaceBetween: 100,
-        loop: true,
+        spaceBetween: 50,
+        
         navigation: {
             nextEl: '.novelty-slider__next',
         }
@@ -186,7 +187,7 @@ function initFirstProductCardSlider(){
         speed: 400,
         freeMode: true,
         //spaceBetween: 100,
-        loop: true,
+        //loop: true,
         breakpoints:
         {
             768: {
