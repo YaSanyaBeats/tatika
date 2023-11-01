@@ -52,7 +52,7 @@
     &__answer-body{
         border-radius: 0 !important;
         border: none !important;
-        
+        gap: 20px;
     }
     &__title {
         display: flex;
@@ -75,8 +75,11 @@
 
     &__date {
         color: $accent-dark;
+        
     }
-
+    &__answer-date{
+        color: $accent-dark;
+    }
 
     &__stars {
         margin-top: 10px;
@@ -103,7 +106,46 @@
     &__text{
 
     }
-    &__date{
-        
+}
+@media (max-width: 1200px) { 
+  
+    .reviews-review{
+        &__image{
+            height: 300px !important;
+        }
+    }
+}
+@media (max-width: 1140px) { 
+  
+    .reviews{
+        &__review{
+            gap: 30px;
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .reviews{
+        &__review{
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .reviews-review{
+        &__title{
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .reviews-review{
+        &__image{
+            height: 420px !important;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__title{
+            align-items: start;
+        }
     }
 }
