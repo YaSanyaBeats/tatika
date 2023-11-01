@@ -91,3 +91,31 @@
         padding-bottom: 30px;
     }
 }
+@media (max-width: 1200px) { 
+    .delivery{
+        &__link{
+            font-size: 20px;
+        } 
+    }
+    .delivery-content-accordion__link button {
+        font-size: 18px;
+    }
+    .delivery-content-accordion__body {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) { 
+    .delivery{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__tabs {
+            width: 100%;
+        }
+        &__link{
+            width: 100%;
+        } 
+    }
+}
