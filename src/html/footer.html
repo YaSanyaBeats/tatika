@@ -117,7 +117,16 @@
     </div>
 </div>
 
-
+<div class="modal fade" id="subscribeConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content delivery-popup__content">
+        <div class="modal-header delivery-popup__header">
+          <a type="button" class="close delivery-popup__close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true" class = "delivery-popup__close-symbol">&times;</span></a>
+        </div>
+        <div class="modal-body delivery-popup__body"><span>Спасибо за подписку</span></div>
+      </div>
+    </div>
+</div>
 
 <div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="subscribe" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -131,7 +140,7 @@
                 <span class=" subscribe-popup__text">Подпишись на нашу рассылку и получи скидку 5% на следущий заказ</span>
                 <form class = "subscribe-popup__form">
                         <input class = "subscribe-popup__input" type="email" id="email" placeholder="example@gmail.com" required />
-                        <button class = "btn subscribe-popup__btn" >Подписаться</button>
+                        <button class = "btn subscribe-popup__btn" data-bs-toggle="modal" data-bs-target="#subscribeConfirm">Подписаться</button>
                 </form>
                 <span class=" subscribe-popup__privacy">Нажимая на кнопку "Отправить сообщение" я подтверждаю своё согласие с 
                     <a href = "#">Политикой конфиденциальности</a>
@@ -143,5 +152,5 @@
     </div>
 </div>
 
-<button class = "contact__btn btn" type="button" data-bs-toggle="modal" data-bs-target="#subscribe">тест</button>
+<!--<button class = "contact__btn btn" type="button" data-bs-toggle="modal" data-bs-target="#subscribe">тест</button>-->
 
