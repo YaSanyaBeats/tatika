@@ -59,3 +59,20 @@
 }
 .main-title {
 }
+@media (max-width: 768px) { 
+    .lookbook-single {
+        &__wrapper{
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+        &__image{
+            justify-content: center !important;
+            margin: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            &:nth-child(10n+5) {
+                justify-content: center !important;
+            }
+        }
+    }
+}
