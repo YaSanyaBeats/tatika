@@ -60,7 +60,7 @@ function initNoveltySlider(){
             768: {
             slidesPerView: 5
             },
-            376: {
+            600: {
                 slidesPerView: 3
             }
         }
