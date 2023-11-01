@@ -91,9 +91,15 @@
 .section-title{
     font-size: 48px;
 }
-@media (max-width: 768px) { 
+@media (max-width: 1140px) { 
   
     .main-title {
         font-size: 48px !important;
+    }
+}
+@media (max-width: 768px) { 
+  
+    .main-title {
+        font-size: 32px !important;
     }
 }

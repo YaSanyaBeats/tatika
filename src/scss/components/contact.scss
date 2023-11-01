@@ -151,3 +151,29 @@
 		}
 }
 
+@media (max-width: 1200px) { 
+    .contact__text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .contact__form{
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) { 
+    .contact__wrapper{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .contact__left {
+        width: 100%;
+
+    }
+    .contact__privacy{
+        padding: 0;
+    }
+    .contact__right {
+        width: 100%;
+        align-items: center;
+    }
+}
