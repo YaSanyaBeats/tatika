@@ -11,7 +11,7 @@
 @import 'config/mixins';
 @import 'config/keyframes';
 
-@import 'libs/normalize';
+//@import 'libs/normalize';
 
 /** Общие параметры, шаблоны(заготовки) и вспомогательные классы */
 @import 'config/base';
@@ -23,14 +23,9 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/hero';
-@import 'components/lookbook';
-@import 'components/collection-slider';
-@import 'components/novelty-slider';
-@import 'components/product-card-main';
-@import 'components/product-slider';
-@import 'components/lookbook-page';
-@import 'components/lookbook-page-single';
-@import 'components/delivery';
-@import 'components/contact';
-@import 'components/reviews';
-@import 'components/404';
+@import 'components/direction-block';
+@import 'components/about-block';
+@import 'components/question-main';
+@import 'components/destinations';
+@import 'components/our-life';
+@import 'components/team';

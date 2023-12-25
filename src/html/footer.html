@@ -1,156 +1,32 @@
 <footer class="footer">
-    <div class="footer__container container">
-        <div class = "footer__block footer__block_line">
-            <div class = "footer__block-left">
-                <span class = "footer-block-elem__title">Новостная рассылка</span>
-                <form class = "footer-block-elem__form">
-                    <div class = "footer-block-elem__form-part">
-                        <input class = "footer-block-elem__input" type="email" id="email" placeholder="example@gmail.com" required />
-                        <span class = "footer-block-elem__text footer-block-elem__label">Дарим скидку 5% за подписку на следующую покупку</span>
-                    </div>
-                    <button class = "footer-block-elem__button btn btn_border" >Подписаться</button>
-                </form>
+    <div class="container footer__wrapper">
+        <div class = "footer__main-content">
+            <ul class = "footer__menu">
+                <li class = "header-menu__element"><a class = "menu__link footer-menu__link">О нас</a></li>
+                <li class = "header-menu__element"><a class = "menu__link footer-menu__link">Статьи</a></li>
+                <li class = "header-menu__element"><a class = "menu__link footer-menu__link">Наша методика</a></li>
+                <li class = "header-menu__element"><a class = "menu__link footer-menu__link">Сертификаты</a></li>
+                <li class = "header-menu__element"><a class = "menu__link footer-menu__link">Фотогалерея</a></li>
+                <li class = "header-menu__element"><a class = "menu__link footer-menu__link">Карта сайта</a></li>
+                </ul>
+            <div class="footer__map">
+                <iframe class = "footer__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb65bca6b97e7f9a6d3d6b3e26d6a7beec1632bf33032aee82e6cee316ac25e1&amp;source=constructor" width="539" height="400" frameborder="0"></iframe>
             </div>
-            <div class = "footer__block-right">
-                <span class = "footer-block-elem__title">По всем вопросам:</span>
-                <div class = "footer-block-elem__content">
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__link_line footer-block-elem__text">info@tatikawear.ru</a>
-                    <span class = "footer-block-elem__text">Время ответа может<br>занимать до 24 часов</span>
-                </div>
-            </div>
-        </div>
-        <div class = "footer__block footer__block_line footer__block_indent">
-            <div class = "footer__block-elem">
-                <span class = "footer-block-elem__title">Информация</span>
-                <div class = "footer-block-elem__content">
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Договор оферты</a>
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Политика конфиденциальности</a>
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Уведомление об использовании<br>Cookie файлов</a>
-                </div>
-            </div>
-            <div class = "footer__block-elem">
-                <span class = "footer-block-elem__title">Каталог</span>
-                <div class = "footer-block-elem__content">
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Женщины</a>
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Мужчины</a>
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text"><span>Дети</span></a>
-                </div>
-            </div>
-            <div class = "footer__block-elem">
-                <span class = "footer-block-elem__title">Покупателям</span>
-                <div class = "footer-block-elem__content">
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Доставка и оплата</a>
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Возврат и обмен</a>
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Контакты</a>
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Условия бонусной программы</a>
-                    <a href = "#" class = "footer-block-elem__link footer-block-elem__text">Отписаться от рассылки</a>
-                </div>
-            </div>
-            <div class = "footer__block-elem footer__block-elem_right">
-                <a href="/" class="logo__wrapper footer__logo">
-                    @@include('helpers/svg.html', {
-                        'class': 'logo logo_white',
-                        'icon': 'logo'
-                    })
-                </a>
-                <div class = "social-links footer__social-links">
-                    <a href = "#" class = "social-link footer__social-link">
-                        @@include('helpers/svg.html', {
-                            'class': 'social-link__icon social-link__telegram',
-                            'icon': 'telegram'
-                        })
-                    </a>
-                    <a href = "#" class = "social-link footer__social-link">
-                        @@include('helpers/svg.html', {
-                            'class': 'social-link__icon social-link__mail',
-                            'icon': 'mail'
-                        })
-                    </a>
-                    <a href = "#" class = "social-link footer__social-link footer__social-link_instagram">
-                        @@include('helpers/svg.html', {
-                            'class': 'social-link__icon ',
-                            'icon': 'instagram'
-                        })
-                    </a>
-                    <a href = "#" class = "social-link footer__social-link">
-                        @@include('helpers/svg.html', {
-                            'class': 'social-link__icon',
-                            'icon': 'whatsapp'
-                        })
-                    </a>
-                </div>
+            <div class="footer__info">
+                <span class = "hero__text footer__accent">8 (48762) 999-40</span>
+                <span class = "hero__text footer__text">
+                    301650 Россия, Тульская область,<br>
+                    г. Новомосковск, ул. Дзержинского, 15<br>
+                    +7 (910) 554-65-65<br>
+                    +7 (906) 625-54-54<br>
+                    Skype: IncoLink<br>
+                    e-mail: info@incolink.ru<br>
+                </span>
             </div>
         </div>
-        <div class = "footer__block footer__block_indent footer__block_last">
-            <div class = "footer__block-elem">
-                <span class = "footer-block-elem__text">г. Москва ул. Пресненская<br>набережная 2, ТЦ "Афимол", 1 этаж</span>
-            </div>
-            <div class = "footer__block-elem footer__block-elem_row">
-                <div class="payment__wrapper">
-                    <img class = "payment-icon" src = "images/payment/visa.svg">
-                </div>
-                <div class="payment__wrapper">
-                    <img class = "payment-icon" src = "images/payment/master-card.svg">
-                </div>
-                <div class="payment__wrapper">
-                    <img class = "payment-icon" src = "images/payment/master-card2.svg">
-                </div>
-            </div>
-            <div class = "footer__block-elem footer__block-elem_right">
-                <span class = "footer-block-elem__text">Все права защищены</span>
-                <span class = "footer-block-elem__text">© tatikawear 2023</span>
-                <span class = "footer-block-elem__text footer-block-elem__text-accent">*Запрещенная в РФ соц.сеть</span>
-            </div>
+        <div class = "footer__second-content">
+            <span class = "footer-second__text">ИнкоЛинк, 2023 ©</span>
+            <a class = "menu__link footer-second__link">Сведения об образовательной организации</a>
         </div>
     </div>
 </footer>
-
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content delivery-popup__content">
-        <div class="modal-header delivery-popup__header">
-          <a type="button" class="close delivery-popup__close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true" class = "delivery-popup__close-symbol">&times;</span></a>
-        </div>
-        <div class="modal-body delivery-popup__body"><span>Спасибо за вопрос<br>
-            ответ придет на почту</span></div>
-      </div>
-    </div>
-</div>
-
-<div class="modal fade" id="subscribeConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content delivery-popup__content">
-        <div class="modal-header delivery-popup__header">
-          <a type="button" class="close delivery-popup__close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true" class = "delivery-popup__close-symbol">&times;</span></a>
-        </div>
-        <div class="modal-body delivery-popup__body"><span>Спасибо за подписку</span></div>
-      </div>
-    </div>
-</div>
-
-<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="subscribe" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content subscribe-popup__content">
-
-            <img class = "modal-header subscribe-popup__header" src = "images/subscribe.jpg">
-            <a type="button" class="close delivery-popup__close subscribe-popup__close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true" class = "delivery-popup__close-symbol">&times;</span></a>
-
-            <div class="modal-body subscribe-popup__body">
-                <span class=" subscribe-popup__title">Подписаться на рассылку</span>
-                <span class=" subscribe-popup__text">Подпишись на нашу рассылку и получи скидку 5% на следущий заказ</span>
-                <form class = "subscribe-popup__form">
-                        <input class = "subscribe-popup__input" type="email" id="email" placeholder="example@gmail.com" required />
-                        <button class = "btn subscribe-popup__btn" data-bs-toggle="modal" data-bs-target="#subscribeConfirm">Подписаться</button>
-                </form>
-                <span class=" subscribe-popup__privacy">Нажимая на кнопку "Отправить сообщение" я подтверждаю своё согласие с 
-                    <a href = "#">Политикой конфиденциальности</a>
-                    и 
-                    <a href = "#">Правилами обработки персональных данных</a>.</span>
-            </div>
-    
-      </div>
-    </div>
-</div>
-
-<!--<button class = "contact__btn btn" type="button" data-bs-toggle="modal" data-bs-target="#subscribe">тест</button>-->
-

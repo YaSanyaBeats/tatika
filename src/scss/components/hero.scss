@@ -1,24 +1,231 @@
 .hero {
-    background: url('@img/hero.jpg') no-repeat 50% 50%;
+    background: url('@img/hero-main.jpg') no-repeat 50% 50%;
     background-size: cover;
-
-    min-height: 100vh;
+    height: 100vh;
+    //min-height: 900px;
+    /*box-shadow: 0px -80px 45px -31px rgba(255, 255, 255, 1) inset, 0px 21px 11px 0px rgba(255, 255, 255, 1);*/
     &__container {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-top: 80vh;
+        position: relative;
+        height: 100vh;
+        z-index: 4;
     }
-    &__btn {
-        min-width: 400px;
+    &__content{
+        position: absolute;
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 10px;
+    }
+    &__accent {
+
+        font-size: 25px;
+        font-weight: 300;
+        text-align: left;
+
+    }
+
+    &__title {
+        font-size: 110px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: left;
+        font-family: Rubik;
+        line-height: 120px;
+        position: relative;
+    }
+
+    &__signature {
+        font-size: 45px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    &__button {
+        width: 65%;
+        padding: 16px 30px;
+    }
+}
+.white__shadow {
+    position: absolute;
+    top: 90vh;
+    background: rgba(255,255,255,0);
+    height: 110px;
+    width: 100%;
+    box-shadow: 0px -114px 28px -50px rgba(255, 255, 255, 1) inset, 0px 21px 11px 0px rgba(255, 255, 255, 1);
+    
+}
+.hero__text{
+    color: $white;
+}
+.arrow-icon{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 130px;
+    bottom: 50px;
+}
+.social__buttons{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    bottom: 100px;
+    right: 10px;
+}
+.hero-button__green{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    z-index: 4;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+.social__image{
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 1440px) { 
+    .hero {
+
+        &__container {
+
+        }
+        &__content{
+
+        }
+        &__accent {
+    
+            font-size: 20px;
+        }
+    
+        &__title {
+            font-size: 90px;
+            line-height: 90px;
+        }
+    
+        &__signature {
+            font-size: 35px;
+        }
+    
+        &__button {
+            width: 60%;
+            padding: 16px 30px;
+        }
+    }
+
+    .arrow-icon{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 120px;
+        bottom: 60px;
+    }
+}
+@media (max-width: 1200px) { 
+    .hero {
+
+        &__container {
+
+        }
+        &__content{
+            gap: 5px;
+        }
+        &__accent {
+    
+            font-size: 16px;
+        }
+    
+        &__title {
+            font-size: 60px;
+            line-height: 60px;
+        }
+    
+        &__signature {
+            font-size: 25px;
+        }
+    
+        &__button {
+            width: 60%;
+            padding: 12px 30px;
+            font-size: 16px;
+        }
+    }
+
+    .arrow-icon{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: 60px;
+        bottom: 30px;
     }
 }
 @media (max-width: 768px) { 
+    .social__buttons{
+        display: none;
+    }
     .hero {
-        &__btn {
-            min-width: 100%;
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url('@img/hero-main.jpg') no-repeat 75% 50%;
+        background-size: cover;
+        min-height: 100vh;
+        &__container {
+
+        }
+        &__content{
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            top: 330px;
+        }
+        &__accent {
+    
+            font-size: 12px;
+        }
+    
+        &__title {
+            font-size: 45px;
+            line-height: 45px;
+        }
+    
+        &__signature {
+            font-size: 20px;
+        }
+    
+        &__button {
+            width: 60%;
+            padding: 12px 30px;
+            font-size: 12px;
         }
     }
-  
-  
-  }
+
+    .arrow-icon{
+        display: none;
+    }
+    .hero__text{
+        text-align: center;
+    }
+
+}
+@media (max-width: 378px) { 
+
+    .hero__content {
+
+        top: 230px;
+    }
+}
+.hero__blur {
+    position: absolute;
+    bottom: 0px;
+    left: -50px;
+    right: -50px;
+    z-index: 3;
+    height: 200px;
+    background: white;
+    background: linear-gradient(0deg, rgba(255,255,255,1), rgba(255,255,255,0.8), rgba(255,255,255,0.5), rgba(255,255,255,0));
+    pointer-events: none;
+}

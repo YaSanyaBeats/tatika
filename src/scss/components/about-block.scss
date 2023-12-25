@@ -1,0 +1,325 @@
+.about-block {
+
+    &__container {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__main-title{
+        text-transform: uppercase;
+        font-size: 60px;
+        text-align: center;
+    }
+    &__title {
+        text-align: left;
+        margin-top: 20px;
+        padding: 0;
+        width: 80%;
+        font-weight: bold;
+    }
+    &__title_height {
+        line-height: 26px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 120px;
+        margin-top: 60px;
+    }
+
+    &__card {
+        position: relative;
+        background: linear-gradient(327.34deg, #C69EF2 -72.38%, #A17FC7 99.7%),
+linear-gradient(180.44deg, #FFFFFF 0.39%, rgba(255, 255, 255, 0) 99.49%);
+
+       // width: 390px;
+       width: auto;
+        border-radius: 25px;
+        height: 380px;
+       // padding: 20px;
+    }
+
+    &__text {
+        margin-top: 15px;
+        padding-right: 125px;
+        display: block;
+    }
+}
+.about-card__content{
+    padding: 40px;
+}
+.about__navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.about-card {
+    &__number-wrapper{
+       /* border: 10px solid $white;*/
+       /*  border-radius: 50px;*/
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -30px;
+    }
+    &__number {
+        display: flex;
+        font-weight: bold;
+        border-radius: 50px;
+        background: 
+            linear-gradient(180deg, rgba(171,145,196,1) 0%, rgba(89,200,200,1) 0%, rgba(55,147,148,1) 100%) padding-box, /*this is your grey background*/
+            linear-gradient(to bottom, white, #379394) border-box;
+        box-shadow: none;
+        border: 2px solid transparent;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        padding: 5px;
+        font-size: 30px;
+    }
+    &__medal-first{
+        left: 83%;
+        width: 250px;
+        top: -210px;
+    }
+    &__medal-second{
+        left: 83%;
+        width: 250px;
+        top: 90px;
+        transform: rotate(-45deg);
+    }
+    &__image {
+        position: absolute;
+        &_main {
+            right: -57px;
+            width: 70%;
+            top: 10px;
+        }
+        &_main-width{
+            width: 70%;
+            right: -55px;
+        }
+        &_main-top{
+            width: 70%;
+            right: -75px;
+            top: -32px;
+        }
+        &_main-right {
+            right: -56px;
+            top: 30px;
+        }
+        &_blur {
+            filter: blur(3px);
+            transform: rotate(65deg);
+            width: 40%;
+            top: 5px;
+            left: -10px;
+        }
+
+        &_blur-minus {
+            filter: blur(3px);
+            transform: rotate(-45deg);
+            width: 40%;
+            top: 50px;
+            left: -5px;
+        }
+    }
+}
+.back__image-number{
+    fill: white;
+}
+.about-card__back{
+    width: 220px;
+    position: absolute;
+    top: -63px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.about-card__image-wrapper{
+    width: auto;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.about-card__content{
+    position: absolute;
+    top: 0px;
+}
+@media (max-width: 1440px) { 
+    .about-block {
+
+        &__container {
+            margin-top: 60px;
+        }
+    
+        &__title {
+
+        }
+        &__title_height {
+            line-height: 26px;
+        }
+        &__cards {
+            gap: 60px;
+            margin-top: 60px;
+        }
+    
+        &__card {
+            width: auto;
+            height: 500px;
+        }
+    
+        &__text {
+        }
+    }
+    .about-card {
+        &__image {
+            position: absolute;
+            &_main-right {
+                top: 0px;
+            }
+        }
+        &__medal-first{
+            left: 83%;
+            width: 200px;
+            top: -140px;
+        }
+        &__medal-second{
+            left: 86%;
+            width: 150px;
+            top: 90px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+@media (max-width: 1200px) { 
+    .about-block {
+
+        &__container {
+            margin-top: 60px;
+        }
+    
+        &__title {
+
+        }
+        &_height {
+            line-height: 26px;
+        }
+        &__cards {
+            gap: 25px;
+            margin-top: 60px;
+        }
+    
+        &__card {
+            width: auto;
+            height: 360px;
+        }
+    
+        &__text {
+            
+            padding-right: 0px;
+        }
+    }
+    .about-card {
+        &__image {
+            position: absolute;
+            &_main-right {
+                top: 0px;
+            }
+        }
+        &__medal-first{
+           display: none;
+        }
+        &__medal-second{
+            display: none;
+        }
+    }
+    .about-card {
+        &__number-wrapper{
+            width: 30px;
+            height: 30px;
+            top: -20px;
+        }
+        &__number {
+        
+        }
+        &__image {
+            &_main {
+                width: 80%;
+                right: -40px;
+                top: 10px;
+            }
+            &_main-right {
+                right: -35px;
+                top: 0px;
+            }
+            &_blur {
+
+                width: 30%;
+                top: 5px;
+                left: 10px;
+            }
+    
+            &_blur-minus {
+                filter: blur(3px);
+                transform: rotate(-45deg);
+                width: 40%;
+                top: 50px;
+                left: -5px;
+            }
+        }
+    }
+}
+.about-block-swiper{
+    width: 100%;
+    //display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.about-block__swiper{
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.about-block-swiper__wrapper{
+    display: flex;
+}
+.about-block-swiper{
+    width: 110%;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+.about-block-swiper__slide{
+    margin-top: 50px;
+}
+@media (max-width: 768px) { 
+    .about-block-swiper{
+        display: flex;
+    }
+    .about-block__cards{
+        display: none;
+    }
+}
+@media (max-width: 378px) { 
+}
+.swiper-creative .swiper-slide {
+
+    overflow: visible !important; 
+
+}
